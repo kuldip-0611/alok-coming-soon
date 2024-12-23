@@ -1,14 +1,22 @@
-import React from 'react';
-import { Gauge, Mail, MapPin, Phone } from 'lucide-react';
-import { NewsletterForm } from './components/NewsletterForm';
+import React from "react";
+import { Gauge, Mail, MapPin, Phone } from "lucide-react";
+import logo from "../src/assets/logo.jpg";
 
 function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 text-white">
       <div className="container mx-auto px-4 py-16 flex flex-col items-center min-h-screen">
         <div className="flex items-center gap-4 mb-12">
-          <Gauge size={48} className="text-blue-400" />
-          <h1 className="text-4xl font-bold">Alok Fabrications</h1>
+          <img
+            src={logo}
+            alt="Alok Fabrications Logo"
+            className="w-12 h-12 rounded-xl object-contain"
+          />
+          <div className="flex items-center gap-4">
+            <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-br outline-text tracking-wide">
+              ALOK FABRICATIONS
+            </h1>
+          </div>
         </div>
 
         <div className="text-center max-w-3xl mx-auto mb-12">
@@ -23,17 +31,17 @@ function App() {
             Stay tuned!
           </p>
 
-          <div className="mb-16 flex justify-center">
+          {/* <div className="mb-16 flex justify-center">
             <NewsletterForm />
-          </div>
+          </div> */}
 
-          <div className="grid md:grid-cols-3 gap-8 text-left">
+          <div className="grid md:grid-cols-3 mx-auto gap-8 text-left">
             <div className="flex items-start gap-3">
               <MapPin className="text-blue-400 mt-1" />
               <div>
                 <h3 className="font-semibold mb-2">Location</h3>
                 <p className="text-gray-300">
-                  Industrial Area Phase II, New Delhi, India
+                  W-124, S Block, MIDC, Bhosari, Pune 411026
                 </p>
               </div>
             </div>
