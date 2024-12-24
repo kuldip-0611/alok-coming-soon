@@ -6,20 +6,20 @@ function App() {
   return (
     <div className="min-h-screen pb-4 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 text-white flex flex-col">
       <div className="container flex-1 mx-auto px-4 pt-16 flex flex-col items-center">
-        <div className="flex items-center gap-4 mb-12">
+        <div className="flex flex-col justify-center items-center mb-12">
           <img
             src={logo}
             alt="Alok Fabrications Logo"
             className="sm:w-28 w-24 h-24 sm:h-28 rounded-xl object-contain"
           />
           <div className="flex items-center gap-4">
-            <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-br outline-text tracking-wide">
+            <h1 className="text-4xl text-center font-bold text-transparent bg-clip-text bg-gradient-to-br outline-text tracking-wide">
               ALOK FABRICATIONS
             </h1>
           </div>
         </div>
 
-        <div className="flex-grow text-center max-w-3xl flex items-center flex-col mb-12 justify-center">
+        <div className="flex-grow sm:mt-[-80px] text-center max-w-3xl flex items-center flex-col mb-12 justify-center">
           <h2 className="text-4xl font-bold mb-6">
             We’re Upgrading to Serve You Better!
           </h2>
@@ -35,8 +35,8 @@ function App() {
         <NewsletterForm />
       </div> */}
 
-          <div className="flex flex-row flex-wrap justify-between items-center gap-8 text-left">
-            <div className="flex mx-auto w-[100%] sm:w-[30%] items-start gap-3">
+          <div className="flex flex-row  flex-wrap justify-between items-start gap-8 text-left">
+            <div className="flex mx-auto  w-[100%] sm:w-[30%] items-start gap-3">
               <MapPin className="text-blue-400 mt-1" />
               <div>
                 <h3 className="font-semibold mb-2">Location</h3>
@@ -45,7 +45,7 @@ function App() {
                 </p>
               </div>
             </div>
-            <div className="flex w-[100%] sm:w-[30%]  items-start gap-3">
+            <div className="flex w-[100%] h-full  sm:w-[30%]  items-start gap-3">
               <Phone className="text-blue-400 mt-1" />
               <div>
                 <h3 className="font-semibold mb-2">Phone</h3>
